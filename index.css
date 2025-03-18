@@ -1,0 +1,610 @@
+*{
+    margin: 0;
+}
+body {
+        
+        transition: background-image 1s ease-in-out;
+       
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: 100vh;
+        margin: 0;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        text-align: center;
+        
+    }
+
+    .content {
+        padding: 20px;
+        border-radius: 10px;
+        width: 40%;
+        margin-top:6rem;
+        text-align: left;
+        font-family: "Kanit", sans-serif;
+        font-weight: 300;
+        font-style: normal;
+        margin-left:10rem;
+        margin-top:10rem;
+    }
+    .content h2{
+        color:orange;
+        font-size:2rem;
+    }
+    h1 {
+        font-size: 3em;
+        margin-bottom: 20px;
+    }
+
+    p {
+        font-size: 1.2em;
+        line-height: 1.6;
+    }
+    .content-div{
+        height:80vh;
+       
+    }
+    .demoresuest{
+        width:150px;
+        height:6vh;
+        border:1px solid orabge;
+        background-color: orange;
+        border-radius: 10px;
+    }
+    .explore{
+        width:150px;
+        height:6vh;
+        border:1px solid orange;
+        background-color:transparent;
+        border-radius: 10px;
+        color: orange;
+    }
+    .indicators {
+        position: absolute;
+        bottom: 20px;
+        left: 80%;
+        transform: translateX(-50%);
+        display: flex;
+        float: right;
+    }
+
+    .indicator {
+        width: 50px;
+        height: 10px;
+        border-radius: 20px;
+        background-color: rgba(255, 255, 255, 0.5);
+        margin: 0 5px;
+        cursor: pointer;
+        float: right;
+    }
+
+    .indicator.active {
+        background-color:orange;
+    }
+.header{
+background-color: rgba(0, 0, 0, 0.7);
+height:3rem;
+top:0;
+color:white;
+
+}
+.header-content{
+width:auto;
+float: right;
+font-family: "Kanit", sans-serif;
+font-weight: 300;
+font-style: normal;
+display: flex;
+padding: 0.7rem;
+}
+.header span{
+display: flex;
+margin-left:30px;
+}
+.header span ul{
+gap:1rem;
+list-style: none;
+}
+.header span a{
+gap: 2rem;
+}
+.header span i{
+color:white;
+}
+.icon a{
+margin-right: 0.5rem;
+}
+.search-button{
+background-color: transparent;
+color:white;
+border:1px solid white;
+
+}
+.search-button :hover{
+color:orange;
+}
+.Navbar{
+position: fixed;
+top: 0;
+left: 0;
+width: 100%;
+background-color: #ffffff;
+display: flex;
+justify-content: space-between;
+box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Optional shadow */
+z-index: 1000; /* Ensure it stays on top */
+color: black;
+}
+.Navbar span{
+    margin-left:1rem;
+}
+.logo{
+width:100px;
+height:40px;
+padding: 10px;
+padding-left: 2rem;
+}
+.logo img{
+width:100%;
+height:100%;
+
+}
+.list-item{
+display: flex;
+}
+.list-item ul{
+margin-right: 3.2rem
+}
+.requestdemo{
+padding: 0.5rem;
+}
+.requestdemo button{
+width:150px;
+height:40px;
+border-radius:20px;
+background-color: orange;
+font-family: "Kanit", sans-serif;
+font-weight: 300;
+font-style: normal;
+font-size:18px;
+border:none;
+}
+.Hreflinks{
+width:75%;
+display: flex;
+padding:10px;
+text-align: left;
+justify-content: left;
+padding: 1rem;
+font-family: "Kanit", sans-serif;
+font-weight: 300;
+font-style: normal;
+}
+.Hreflinks a{
+margin-left: 1rem;
+font-family: "Kanit", sans-serif;
+font-weight: 300;
+font-style: normal;
+}
+.Hreflinks a:hover{
+color:orange;
+}
+.services{
+margin-top:1rem;
+width:72vw;
+height:autopx;
+color:black;
+font-family: "Kanit", sans-serif;
+font-style: normal;
+margin-left:30px;
+}
+.services-data{
+width:auto;
+height: auto;
+border-radius:10px;
+padding:0.5rem;
+box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.title{
+text-align: left;
+font-size:1.5rem;
+font-family: "Kanit", sans-serif;
+font-style: normal;
+margin-left:30px;
+}
+.service-title{
+font-size:18px;
+color:gray;
+}
+.service-tab{
+width:100%;
+height:auto;
+box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+border-radius: 20px;
+}
+
+.tabs-container {
+        overflow-x: auto; /* Enable horizontal scrolling */
+        white-space: nowrap; /* Prevent tabs from wrapping */
+        background-color: #ffffff;
+        padding: 10px 0;
+    }
+.tabs-container button{
+padding: 1rem;
+border-bottom: 2px solid white;
+}
+    .tab {
+        display: inline-block; /* Display tabs horizontally */
+        padding: 2px 20px;
+        cursor: pointer;
+        border: none;
+        background-color: transparent;
+        border-bottom: 2px solid white; /* Initially transparent border */
+        transition: border-bottom 0.3s ease;
+    }
+    .tabs-container::-webkit-scrollbar {
+      display: none;
+    }   
+     .tab.active {
+        border-bottom: 2px solid white; /* Blue border on hover or active */
+        background-color: orange;
+        color:white;
+    }
+   
+    .content-container1 {
+        padding: 20px;
+        display: flex;
+    }
+
+    .content1 {
+        display: none; /* Initially hide all content */
+    }
+
+    .content1.active {
+        display: block; /* Show active content */
+    }
+
+
+    .grid-container {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Responsive columns */
+        gap: 20px; /* Space between cards */
+        padding: 20px;
+    }
+
+    .card {
+        border: 1px solid #ddd;
+        border-radius: 8px;
+        padding: 20px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        text-align: left;
+        opacity: 0; /* Initially hidden */
+            transform: translateY(50px); /* Move down initially */
+            transition: opacity 0.8s ease, transform 0.8s ease;
+    }
+    .card.show{
+        opacity: 1;
+        transform: translateY(0); 
+    }
+    .card:hover {
+        transform: translateY(-5px); /* Slight lift on hover */
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    }
+
+    .card img {
+        max-width: 100%;
+        height: auto;
+        border-radius: 4px;
+        margin-bottom: 10px;
+    }
+
+    .card h2 {
+        margin-bottom: 10px;
+    }
+
+    .card p {
+        color: #555;
+    }
+    .card-text{
+        font-size:0.9rem;
+    }
+    #backToTop {
+        display: none; /* Hidden by default */
+        position: fixed; /* Fixed/sticky position */
+        bottom: 20px; /* Place the button at the bottom of the page */
+        right: 30px; /* Place the button 30px from the right */
+        z-index: 99; /* Make sure it does not overlap */
+        border: none; /* Remove borders */
+        outline: none; /* Remove outline */
+        background-color: #5e79cb; /* Set a background color */
+        color: white; /* Text color */
+        cursor: pointer; /* Add a mouse pointer on hover */
+        padding: 15px; /* Some padding */
+        border-radius: 10px; /* Rounded corners */
+        font-size: 18px; /* Increase font size */
+    }
+    
+    #backToTop:hover {
+        background-color: #333; /* Add a dark-grey background on hover */
+    }
+    
+    
+    .dropdown{
+        display: none;
+        position: absolute;
+        background-color: #ffffff;
+        width:auto;
+        height:auto;
+        margin-left: -7.5rem;
+        margin-top: 0.3rem;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        z-index: 1;
+        border-radius:10px;
+    }
+   
+   
+    .dropdown1:hover .dropdown{
+        display: block;
+        color:orange;
+    }
+    .dropdown2con{
+        display: none;
+        position: absolute;
+        background-color: #f9f9f9;
+        width:auto;
+        height:auto;
+        margin-left: -20rem;
+        margin-top: 0.3rem;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        z-index: 1;
+        border-radius:10px;
+    }
+    .dropdown2:hover .dropdown2con{
+        display: block;
+        color:orange;
+    }
+    .dropdown3con{
+        display: none;
+        position: absolute;
+        background-color: #f9f9f9;
+        width:auto;
+        height:auto;
+        margin-left: -25rem;
+        margin-top: 0.5rem;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        z-index: 1;
+        border-radius:10px;
+    }
+    .dropdown3:hover .dropdown3con{
+        display: block;
+        color:orange;
+    }
+
+    .dropdown4con{
+        display: none;
+        position: absolute;
+        background-color: #f9f9f9;
+        width:auto;
+        height:auto;
+        margin-left: -25rem;
+        margin-top: 0.5rem;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        z-index: 1;
+        border-radius:10px;
+    }
+    .dropdown4:hover .dropdown4con{
+        display: block;
+        color:orange;
+    }
+
+    .dropdown-grid{
+        padding: 2rem 2rem;
+        display: grid;
+        grid-template-columns: auto auto auto;
+        justify-content: left;
+    }
+    .dropdown-grid span{
+       padding: 1rem 1rem;
+    }
+   .list-1{
+    font-weight:bold;
+    color:rgb(129, 184, 212);
+    list-style-image: url('/images/Dropdown.jpg');
+    font-size:1.5vw;
+    font-family: "Kanit", sans-serif;
+    font-style: normal;
+    margin-left:30px;
+   }
+   
+   .child-list1{
+    list-style: none;
+    color:gray;
+    font-weight: 200px;
+    font-family: "Kanit", sans-serif;
+    font-style: normal;
+    font-size: 1.2vw;
+   }
+   .child-list1 li{
+    padding: 0.2rem 0.2rem;
+   }
+   .child-list a:hover{
+      background-color: rgb(236, 228, 228);
+   }
+
+
+   .list-2{
+    font-weight:bold;
+    color:rgb(129, 184, 212);
+    list-style-image: url('/images/Dropdown2.jpg');
+    font-size:1.5vw;
+    font-family: "Kanit", sans-serif;
+    font-style: normal;
+   }
+   
+   .child-list2{
+    list-style: none;
+    color:gray;
+    font-weight: 200px;
+    font-family: "Kanit", sans-serif;
+    font-style: normal;
+    font-size: 1.2vw;
+   }
+   .child-list2 li{
+    padding: 0.2rem 0.2rem;
+   }
+   .list-3{
+    font-weight:bold;
+    color:rgb(129, 184, 212);
+    list-style-image: url('/images/Dropdown3.jpg');
+    font-size:1.5vw;
+    font-family: "Kanit", sans-serif;
+    font-style: normal;
+   }
+   .child-list3{
+    list-style: none;
+    color:gray;
+    font-weight: 200px;
+    font-family: "Kanit", sans-serif;
+    font-style: normal;
+    font-size: 1.2vw;
+   }
+   .child-list3 li{
+    padding: 0.2rem 0.2rem;
+   }
+   .list-4{
+    font-weight:bold;
+    color:rgb(129, 184, 212);
+    list-style-image: url('/images/Dropdown4.jpg');
+    font-size:1.5vw;
+    font-family: "Kanit", sans-serif;
+    font-style: normal;
+   }
+   .child-list4{
+    list-style: none;
+    color:gray;
+    font-weight: 200px;
+    font-family: "Kanit", sans-serif;
+    font-style: normal;
+    font-size: 1.2vw;
+   }
+   .child-list4 li{
+    padding: 0.2rem 0.2rem;
+   }
+   .list-5{
+    font-weight:bold;
+    color:rgb(129, 184, 212);
+    list-style-image: url('/images/Dropdown5.jpg');
+    font-size:1.5vw;
+    font-family: "Kanit", sans-serif;
+    font-style: normal;
+   }
+   .child-list5{
+    list-style: none;
+    color:gray;
+    font-weight: 200px;
+    font-family: "Kanit", sans-serif;
+    font-style: normal;
+    font-size: 1.2vw;
+   }
+   .child-list5 li{
+    padding: 0.2rem 0.2rem;
+   }
+   .list-6{
+    font-weight:bold;
+    color:rgb(129, 184, 212);
+    list-style-image: url('/images/Dropdown6.jpg');
+    font-size:1.5vw;
+    font-family: "Kanit", sans-serif;
+    font-style: normal;
+   }
+   .child-list6{
+    list-style: none;
+    color:gray;
+    font-weight: 200px;
+    font-family: "Kanit", sans-serif;
+    font-style: normal;
+    font-size: 1.2vw;
+   }
+   .child-list6 li{
+    padding: 0.2rem 0.2rem;
+   }
+   .list-7{
+    font-weight:bold;
+    color:rgb(129, 184, 212);
+    list-style-image: url('/images/Dropdown7.jpg');
+    font-size:1.5vw;
+    font-family: "Kanit", sans-serif;
+    font-style: normal;
+   }
+   .child-list7{
+    list-style: none;
+    color:gray;
+    font-weight: 200px;
+    font-family: "Kanit", sans-serif;
+    font-style: normal;
+    font-size: 1.2vw;
+   }
+   .child-list7 li{
+    padding: 0.2rem 0.2rem;
+   }
+
+/* Conatct us */
+ .contact-for-us{
+    width:100%;
+    height:auto;
+    display: flex;
+    justify-content: space-around;
+    background-color: rgb(6, 175, 110);
+   
+ }
+ .contact-text{
+    font-family: "Kanit", sans-serif;
+    font-style: normal;
+    font-size: 1.2vw;
+    text-align: left;
+    padding: 1.8rem;
+ }
+ .contact-button{
+    padding: 1.8rem;
+ }
+ .contact-button button{
+    width:auto;
+    background-color: orange;
+    font-family: "Kanit", sans-serif;
+    font-style: normal;
+    font-size: 1.3vw;
+    text-align: left;
+    padding: 0.8rem;
+    text-align: center;
+    border:none;
+    border-radius: 10px;
+ }
+   /* footer */
+.footer-div {
+    width:100%;
+    height:auto;
+    display: flex;
+    justify-content: space-around;
+    background-color: rgb(9, 13, 23);
+    
+}
+.footer-container{
+    display: flex;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    padding: 2rem 2rem;
+    text-align: left;
+}
+.footer-container ul{
+    list-style: none;
+    color:gray;
+    font-family: "Kanit", sans-serif;
+    font-style: normal;
+    font-size: 1.2vw;
+    text-align: left;
+}
+.footer-container ul>li{
+    text-align: left;
+}
+
+   
