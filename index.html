@@ -7,7 +7,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400..700;1,400..700&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Playwrite+CU:wght@100..400&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />   
-<link rel="stylesheet" href="./index.css"/>
+<link rel="stylesheet" href="/CSS/index.css"/>
 <title>Document</title>
 </head>
 
@@ -35,8 +35,8 @@
         <span class="logo">
             <img src="./Logo.png"/>
       </span>
-      <span class="Hreflinks">
-            <span class="dropdown1">Engineering Services <i class="fa-solid fa-caret-down"></i>
+      <div class="Hreflinks">
+            <div class="dropdown1">Engineering Services <i class="fa-solid fa-caret-down"></i>
                 <div class="dropdown">
                     <div class="dropdown-content">
                          <div class="dropdown-grid">
@@ -106,7 +106,7 @@
                          </div>
                     </div>
                  </div>
-            </span>
+            </div>
             <span class="dropdown2">Industries <i class="fa-solid fa-caret-down"></i>
                 <div class="dropdown2con">
                     <div class="dropdown-content">
@@ -215,13 +215,27 @@
             </span>
             <span class="contact-us">Contact us</span>
             
-      </span>
+      </div>
       <span class="requestdemo">
             <button>Request Demo</button>
       </span>
-     
-     
+      <span class="manubar">
+         <button id="offcanvas-btn"><i class="fa-solid fa-bars"></i></button>
+         <div id="offcanvas">
+            <div class="offcanvas-header">
+            <span class="offcanvas-logo"><img src="./Logo.png"/></span>
+            <span id="offcanvas-close">&times;</span>
+            </div>
+            <div id="offcanvas-content">
+               <h2>No data for Links</h2>
+            </div>
+        </div>
     
+        <div id="overlay"></div>
+      </span>
+     
+     
+   
     </div>
     <div class="content-div">
     <div class="content" id="Sidedata">
@@ -246,6 +260,7 @@
             <button class="tab" data-tab="tab6">Technical Documentation</button>
             <button class="tab" data-tab="tab7">Early Engineering Talent (EET)</button>
         </div>
+
         <div class="content1-container">
             <div class="content1 active" id="tab1">
                 <center>
@@ -1174,5 +1189,30 @@ backToTopButton.onclick = function() {
     document.body.scrollTop = 0; // For Safari
     document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
 }
+
+
+const offcanvasBtn = document.getElementById('offcanvas-btn');
+        const offcanvas = document.getElementById('offcanvas');
+        const offcanvasClose = document.getElementById('offcanvas-close');
+        const overlay = document.getElementById('overlay');
+
+        offcanvasBtn.addEventListener('click', () => {
+            offcanvas.classList.add('open');
+            overlay.classList.add('active');
+            document.body.style.overflow = 'hidden'; //Disable body scroll
+        });
+
+        offcanvasClose.addEventListener('click', () => {
+            offcanvas.classList.remove('open');
+            overlay.classList.remove('active');
+            document.body.style.overflow = ''; //Enable body scroll
+        });
+
+        overlay.addEventListener('click', () => {
+            offcanvas.classList.remove('open');
+            overlay.classList.remove('active');
+            document.body.style.overflow = ''; //Enable body scroll
+        });
+
 </script>
 </html>
