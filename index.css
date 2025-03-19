@@ -218,7 +218,7 @@ font-size:18px;
 color:gray;
 }
 .service-tab{
-width:100%;
+width:auto;
 height:auto;
 box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 border-radius: 20px;
@@ -228,7 +228,7 @@ border-radius: 20px;
         overflow-x: auto; /* Enable horizontal scrolling */
         white-space: nowrap; /* Prevent tabs from wrapping */
         background-color: #ffffff;
-        padding: 10px 0;
+       
     }
 .tabs-container button{
 padding: 1rem;
@@ -267,16 +267,17 @@ border-bottom: 2px solid white;
 
 
     .grid-container {
+        
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Responsive columns */
         gap: 20px; /* Space between cards */
-        padding: 20px;
+       
     }
 
     .card {
         border: 1px solid #ddd;
         border-radius: 8px;
-        padding: 20px;
+        padding: 1.2rem;
         box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
         text-align: left;
         opacity: 0; /* Initially hidden */
@@ -322,7 +323,7 @@ border-bottom: 2px solid white;
         cursor: pointer; /* Add a mouse pointer on hover */
         padding: 15px; /* Some padding */
         border-radius: 10px; /* Rounded corners */
-        font-size: 18px; /* Increase font size */
+        font-size: 2rem; /* Increase font size */
     }
     
     #backToTop:hover {
@@ -606,5 +607,240 @@ border-bottom: 2px solid white;
 .footer-container ul>li{
     text-align: left;
 }
+.manubar{
+    display: none;
+}
 
+
+
+
+
+@media (max-width: 888px) {
+      
+    .requestdemo{
+        display: none;
+    }
+    .Hreflinks{
+        display: none;
+    }
+    .manubar{
+        display: block;
+    }
+    .manubar button{
+        padding: 1rem;
+        font-size:2rem;
+        border:none;
+        font-weight: bold;
+        color:gray;
+        background-color: white;
+        margin-right: 1.5rem;
+    }
+    .Navbar{
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        background-color: #ffffff;
+        display: flex;
+        justify-content: space-between;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Optional shadow */
+        z-index: 1000; /* Ensure it stays on top */
+        color: black;
+        padding: 0.8rem;
+    }
+    .content {
+        padding:2rem 2rem ;
+        border-radius: 10px;
+        width: 100vw;
+        text-align: center;
+        font-family: "Kanit", sans-serif;
+        font-weight: 300;
+        font-style: normal;
+        margin-right: 5rem;
+        justify-content: center;
+        margin-left: -1rem;
+    }
+    .content h2{
+        color:orange;
+        font-size:4.8vw;
+
+    }
+     .content-div{
+        width:100%;
+        height:80vh;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    /* tab services */
+    .services{
+        margin-top:1rem;
+        width:100%;
+        height:auto;
+        color:black;
+        font-family: "Kanit", sans-serif;
+        font-style: normal;
+        text-align: center;
+        width:100%;
+        }
+        .services-data{
+        width:100%;
+        height: auto;
+        border-radius:10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .title{
+        text-align: left;
+        font-size:1.5rem;
+        font-family: "Kanit", sans-serif;
+        font-style: normal;
+        margin-left:30px;
+        }
+        .service-title{
+        font-size:18px;
+        color:gray;
+        }
+        .service-tab{
+        width:auto;
+        height:auto;
+        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+        border-radius: 20px;
+        }
+        
+        .grid-container {
+            width:100%;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Responsive columns */
+             
+           
+        }
+        .tabs-container {
+                overflow-x: auto; /* Enable horizontal scrolling */
+                white-space: nowrap; /* Prevent tabs from wrapping */
+                background-color: #ffffff;
+                padding: 10px 0;
+            }
+        .tabs-container button{
+        padding: 1rem;
+        border-bottom: 2px solid white;
+        }
+            .tab {
+                display: inline-block; /* Display tabs horizontally */
+                padding: 2px 20px;
+                cursor: pointer;
+                border: none;
+                background-color: transparent;
+                border-bottom: 2px solid white; /* Initially transparent border */
+                transition: border-bottom 0.3s ease;
+            }
+            .tabs-container::-webkit-scrollbar {
+              display: none;
+            }   
+             .tab.active {
+                border-bottom: 2px solid white; /* Blue border on hover or active */
+                background-color: orange;
+                color:white;
+            }
+           
+            .content-container1 {
+                padding: 20px;
+                display: flex;
+            }
+        
+            .content1 {
+                display: none; /* Initially hide all content */
+            }
+        
+            .content1.active {
+                display: block; /* Show active content */
+            }
+            .contact-for-us{
+    width:100%;
+    height:auto;
+    display: flex;
+    justify-content: space-around;
+    background-color: rgb(6, 175, 110);
+   
+ }
+ .contact-text{
+    font-family: "Kanit", sans-serif;
+    font-style: normal;
+    font-size: 1.2vw;
+    text-align: left;
+    padding: 1.8rem;
+ }
+ .contact-button{
+    padding: 1.8rem;
+ }
+ .contact-button button{
+    width:auto;
+    background-color: orange;
+    font-family: "Kanit", sans-serif;
+    font-style: normal;
+    font-size: 1.3vw;
+    text-align: left;
+    padding: 0.8rem;
+    text-align: center;
+    border:none;
+    border-radius: 10px;
+ }
+ 
+ 
+
+#offcanvas {
+    position: fixed;
+    top: 0;
+    right: -100vh; /* Initially hidden */
+    width: 100%;
+    height: 100%;
+    background-color: #f0f0f0;
+    transition: right 0.3s ease;
+    box-shadow: -2px 0 5px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+    overflow-y: auto; /* Allow scrolling within offcanvas */
+}
+
+#offcanvas.open {
+    right: 0; /* Show offcanvas */
+}
+
+#offcanvas-content {
+    padding: 20px;
+}
+
+#offcanvas-close {
+   
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+    font-size: 50px;
+    padding: 1.5rem;
+}
+.offcanvas-header{
+    display: flex;
+    justify-content: space-between;
+}
+.offcanvas-logo{
+    padding: 1.5rem;
+}
+.offcanvas-logo img{
+    width:100px;
+    height:40px;
+}
+#overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: none;
+    z-index: 999;
+}
+
+#overlay.active {
+    display: block;
+}
+}
    
